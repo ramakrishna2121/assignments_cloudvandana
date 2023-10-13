@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+    <h1 class="heading">Customer Survey Form</h1>
+    <form name="surveyForm" id="surveyForm" onsubmit="return validateForm()" method="POST">
+        <div class="form-row">
+            <div class="form-group">
+        <label for="FirstName">First Name</label>
+        <input type="text" name="FirstName" id="FirstName" />
+            </div>
+            <div class="form-group">
+        <label for="LastName">Last Name</label>
+        <input type="text" name="LastName" id="LastName" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+        <label for="DOB">Date Of Birth</label>
+        <input type="date" id="DOB" />
+            </div>
+            <div class="form-group">
+        <label for="CountryName">Country</label>
+        <select name="Country" id="Country">
+            <option value="india">India</option>
+            <option value="australia">Australia</option>
+            <option value="england">England</option>
+            <option value="south africa">South Africa</option>
+            <option value="pakistan">Pakistan</option>
+        </select>
+    </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+        <label for="Gender">Gender</label>
+        <div class="form-check-row">
+        <input type="checkbox" name="Gender" value="Male" id="Male"  />
+        <label id="checkboxid">Male</label>
+    
+        <input type="checkbox" name="Gender" value="Female" id="Female"/>
+        <label id="checkboxid">Female</label>
+    </div>
+      </div>      
+            <div class="form-group">
+        <label for="Profession">Profession</label>
+        <input type="text" name="Profession" id="Profession" />
+    </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" name="Email" id="Email" />
+        </div>
+        <div class="form-group">
+        <label for="Num">Mobile Number</label>
+        <input type="text" name="num" id="Num" />
+        </div>
+            </div>
+    <div class="buttons-container">  
+        <input type="submit" value="Submit" name="Submit">
+        <input type="reset" value="Reset" name="Reset" onclick="resetForm()">
+    </div>
+    </form>
+</body>
+</html>
